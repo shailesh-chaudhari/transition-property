@@ -1,0 +1,62 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px;
+    transition-property: background-color;
+    transition-duration: 3000ms;
+}
+
+:where(div, #div1, #div2, #div3, #div4, #div5, #div6, #div7):hover {
+    background-color: lightcoral;
+    border-radius: 100px;
+}
+
+#div1 {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px;
+    transition-property: background-color;
+    transition-duration: 3000ms;
+    transition-timing-function: ease-out
+}
+
+#div2 {
+    background-color: lightgreen;
+    transition-timing-function: ease-in;
+}
+
+#div3 {
+    background-color: lightpink;
+    transition-timing-function: linear;
+}
+
+#div4 {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px;
+    transition-property: background-color;
+    transition-duration: 3000ms;
+    transition: background-color 3s ease-in;
+}
+
+
+#div5 {
+    background-color: lightgreen;
+    transition: background-color 3s ease-out;
+}
+
+#div6 {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px;
+    transition: background-color 3s ease-in, border-radius 3s ease-in;
+}
+
+#div7 {
+    background-color: lightgreen;
+    transition: background-color 3s ease-out, border-radius 3s ease-out;
+}
